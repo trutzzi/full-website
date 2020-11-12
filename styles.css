@@ -593,27 +593,22 @@ body {
 
 h1 {
     font-size: 52px;
-    font-family: 'Xanh Mono', monospace;
 }
 
 h2 {
     font-size: 42px;
-    font-family: 'Xanh Mono', monospace;
 }
 
 h3 {
     font-size: 38px;
-    font-family: 'Xanh Mono', monospace;
 }
 
 h4 {
     font-size: 24px;
-    font-family: 'Xanh Mono', monospace;
 }
 
 h4 {
     font-size: 20px;
-    font-family: 'Xanh Mono', monospace;
 }
 
 h1,
@@ -621,6 +616,7 @@ h2,
 h3,
 h4,
 h5 {
+    font-family: 'Oswald';
     line-height: 5rem;
 }
 
@@ -694,6 +690,27 @@ nav a {
     text-align: center;
 }
 
+nav .level2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #5C574F;
+    min-width: 150px;
+}
+
+nav .level2 a {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+nav .level2 li {
+    display: block;
+}
+
+nav .has-childrens {
+    position: relative;
+}
+
 nav li~li>a {
     padding: 20px;
     border-left: 1px solid rgba(0, 0, 0, 0.2)
@@ -746,6 +763,11 @@ header .top {
     justify-content: space-between;
 }
 
+header .slick-prev:before,
+header .slick-next:before {
+    color: #DFF8EB;
+}
+
 .topnav {
     padding: 25px 0;
 }
@@ -770,9 +792,35 @@ header .top {
     padding-top: 50px;
 }
 
+.content a:before {
+    content: '>';
+    margin-right: 5px;
+}
+
+.content a {
+    transition: 0.3s color;
+    text-decoration: none;
+    padding: 0 10px;
+    color: #5C574F;
+}
+
+.content a:hover {
+    color: #74776B;
+}
+
 .content h2,
-h3 {
+.content h3 {
     margin: 25px 0px 40px 0px;
+    text-transform: capitalize;
+}
+
+.content h2:before {
+    border-left: 3px solid #5C574F;
+    border-right: 3px solid #74776B;
+    background: #48483A;
+    margin-right: 10px;
+    padding-right: 1px;
+    content: '';
 }
 
 .content p {
@@ -838,8 +886,9 @@ footer li a:hover {
 }
 
 footer h4 {
-    padding: 15px 0 25px 0;
+    padding: 15px 0 0 0;
     color: #DFF8EB;
+    text-transform: capitalize;
 }
 
 footer li a:before {
@@ -856,6 +905,10 @@ footer li a:before {
     padding-top: 50px;
 }
 
+.slider section {
+    margin: 25px 0 50px 0;
+}
+
 .slider li {
     display: block;
 }
@@ -867,6 +920,12 @@ footer li a:before {
     color: #48483A;
     transition: color 0.3s;
     padding: 5px 0px;
+}
+
+.slider h3 {
+    font-size: 2.4rem;
+    margin-left: 15px;
+    text-transform: capitalize;
 }
 
 .slider li a:hover {

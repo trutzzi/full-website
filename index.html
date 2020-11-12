@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Xanh+Mono&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="scripts/jQuery.min.js"></script>
+    <script src="scripts\superfish-master\js\superfish.js"></script>
     <link rel="stylesheet" type="text/css" href="scripts/slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="scripts/slick-1.8.1/slick/slick-theme.css" />
     <script type="text/javascript" src="scripts/slick-1.8.1/slick/slick.min.js"></script>
@@ -79,15 +80,29 @@
             </div>
             <nav>
                 <div class="container">
-                    <ul>
+                    <ul class="level1">
                         <li>
                             <a href="#">Home</a>
                         </li>
                         <li>
                             <a href="#">About us</a>
                         </li>
-                        <li>
+                        <li class="has-childrens">
                             <a href="#">Products</a>
+                            <ul class="level2">
+                                <li><a href="#">Lorem.</a></li>
+                                <li><a href="#">Nulla.</a></li>
+                                <li><a href="#">Error?</a></li>
+                                <li><a href="#">Ad!</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-childrens">
+                            <a href="#">Location</a>
+                            <ul class="level2">
+                                <li><a href="#">Lorem.</a></li>
+                                <li><a href="#">Laborum.</a></li>
+                                <li><a href="#">Modi.</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">Contact</a>
@@ -140,7 +155,9 @@
                                 eius
                                 officia quas ducimus. Reprehenderit omnis, earum veniam ea hic architecto illo similique
                                 est
-                                corrupti cumque!</p>
+                                corrupti cumque!
+                                <a href="#">Read More</a>
+                            </p>
                         </section>
                         <section class="growvalueteam">
                             <div class="grid">
@@ -169,42 +186,48 @@
                         </section>
                     </div>
                     <div class="slider grid__col grid__col--1-of-3 grid__col--md-1-of-1">
-                        <h3>Quick links</h3>
-                        <ul>
-                            <li>
-                                <a href="#">Product</a>
-                            </li>
-                            <li>
-                                <a href="#">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="#">Other link</a>
-                            </li>
-                        </ul>
-                        <h3>Social</h3>
-                        <ul>
-                            <li>
-                                <a href="#">Facebook</a>
-                            </li>
-                            <li>
-                                <a href="#">Instagram</a>
-                            </li>
-                            <li>
-                                <a href="#">Pinterest</a>
-                            </li>
-                        </ul>
-                        <h3>FAQ</h3>
-                        <ul>
-                            <li>
-                                <a href="#">Copyright</a>
-                            </li>
-                            <li>
-                                <a href="#">Info</a>
-                            </li>
-                            <li>
-                                <a href="#">Policy</a>
-                            </li>
-                        </ul>
+                        <section>
+                            <h3>Quick links</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Product</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Other link</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Social</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="#">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pinterest</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>FAQ</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Copyright</a>
+                                </li>
+                                <li>
+                                    <a href="#">Info</a>
+                                </li>
+                                <li>
+                                    <a href="#">Policy</a>
+                                </li>
+                            </ul>
+                        </section>
                     </div>
                 </div>
             </div>
